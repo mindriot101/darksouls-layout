@@ -1,0 +1,42 @@
+digraph {
+    firelink_shrine[label="Firelink Shrine"];
+    new_londo[label="New Londo"];
+    darkroot_basin[label="Darkroot Basin"];
+    darkroot_forest[label="Darkroot Forest"];
+    undead_burg[label="Undead Burg"];
+    undead_parish[label="Undead Parish"];
+    valley_of_drakes[label="Valley Of Drakes"];
+    lower_undead_burg[label="Lower Undead Burg"];
+    the_catacombs[label="The Catacombs"];
+    tomb_of_the_giants[label="Tomb Of The Giants"];
+    sens_fortress[label="Sens Fortress"];
+    anor_londo[label="Anor Londo"];
+    the_dukes_archives[label="The Dukes Archives"];
+    lost_isalith[label="Lost Isalith"];
+    blighttown[label="Blighttown"];
+    the_depths[label="The Depths"];
+    the_painted_world[label="The Painted World"];
+
+
+    // Links
+    firelink_shrine -> new_londo;
+    firelink_shrine -> undead_burg;
+    firelink_shrine -> the_catacombs;
+    undead_parish -> firelink_shrine;
+    undead_burg -> undead_parish;
+    undead_burg -> lower_undead_burg;
+    undead_parish -> darkroot_forest;
+    darkroot_forest -> darkroot_basin;
+    darkroot_basin -> undead_parish;
+    new_londo -> valley_of_drakes;
+    valley_of_drakes -> darkroot_basin;
+    lower_undead_burg -> the_depths;
+    the_depths -> blighttown;
+    firelink_shrine -> blighttown;
+    blighttown -> lost_isalith;
+    the_catacombs -> tomb_of_the_giants;
+    undead_parish -> sens_fortress;
+    sens_fortress -> anor_londo;
+    anor_londo -> the_dukes_archives;
+    anor_londo -> the_painted_world;
+}
